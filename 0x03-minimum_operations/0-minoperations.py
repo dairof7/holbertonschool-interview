@@ -13,6 +13,7 @@ def minOperations(n):
     Returns:
         [int]: [minimun operations]
     """
+    i = int(n)
     num_operations = 0
     num = n
     while num > 1:
