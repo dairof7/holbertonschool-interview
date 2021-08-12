@@ -15,7 +15,7 @@ def minOperations(n):
     """
     if n <= 1 or type(n) != int:
         return 0
-    i = n/2
+    i = int(n/2)
     num_operations = 0
     num = n
     while num > 1:
