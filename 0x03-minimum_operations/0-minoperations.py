@@ -13,6 +13,8 @@ def minOperations(n):
     Returns:
         [int]: [minimun operations]
     """
+    if not isinstance(n, int) or n <= 1:
+        return 0
     i = int(n/2)
     num_operations = 0
     num = n
