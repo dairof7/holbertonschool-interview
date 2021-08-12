@@ -13,7 +13,6 @@ def minOperations(n):
     Returns:
         [int]: [minimun operations]
     """
-    i = int(n/2)
     num_operations = 0
     num = n
     while num > 1:
