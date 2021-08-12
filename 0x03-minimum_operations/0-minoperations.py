@@ -9,7 +9,6 @@ def minOperations(n):
     """
     Minimum Operations
     """
-
     if n <= 1:
         return 0
     div = 2 
