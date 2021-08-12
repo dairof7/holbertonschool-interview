@@ -22,6 +22,6 @@ def minOperations(n):
             if i == 0:
                 return n
         num_operations += num / i
-        num = num/(num / i)
+        num = num / (num / i)
         i -= 1
     return int(num_operations)
