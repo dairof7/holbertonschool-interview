@@ -13,7 +13,7 @@ def minOperations(n):
     Returns:
         [int]: [minimun operations]
     """
-    if n <= 1 or type(n) != int:
+    if type(n) != int or n <= 1:
         return 0
     i = int(n/2)
     num_operations = 0
@@ -27,3 +27,4 @@ def minOperations(n):
         num = num / (num / i)
         i -= 1
     return int(num_operations)
+
