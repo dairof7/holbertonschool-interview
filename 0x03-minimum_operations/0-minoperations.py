@@ -13,15 +13,15 @@ def minOperations(n):
     Returns:
         [int]: [minimun operations]
     """
-    p = 0
-
-    if n <= 1 or type(n) != int:
-        return p
-
-    for i in range(2, n + 1):
-        while (0 == n % i):
-            p = p + i
-            n = n / i
-            if n < i:
-                break
-    return p
+    i = int(n/2)
+    num_operations = 0
+    num = n
+    while num > 1:
+        while num % i != 0:
+            i -= 1
+            if i == 0:
+                return n
+        num_operations += num / i
+        num = num / (num / i)
+        i -= 1
+    return int(num_operations)
