@@ -1,5 +1,6 @@
 # 0x04. Sandpiles
 
+
 Write a function that computes the sum of two sandpiles
 
 * Prototype: void sandpiles_sum(int grid1[3][3], int grid2[3][3]);
