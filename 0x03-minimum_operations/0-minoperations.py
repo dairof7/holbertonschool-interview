@@ -9,12 +9,10 @@ def minOperations(n):
     """
     Minimum Operations
     """
-
     if n <= 1:
         return 0
-    div = 2 
     num_operations = 0
-
+    div = 2
     while n > 1:
         if n % div == 0:
             n /= div
